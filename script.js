@@ -43,14 +43,8 @@ document.addEventListener('DOMContentLoaded', function() {
             const countryCard = document.createElement('div');
             countryCard.className = 'country-card';
             
-            // Extract currency information
-            let currencies = 'N/A';
-            if (country.currencies) {
-                currencies = Object.values(country.currencies)
-                    .map(currency => `${currency.name} (${currency.symbol || 'No symbol'})`)
-                    .join(', ');
-            }
-            
+          
+          
             // Extract languages
             let languages = 'N/A';
             if (country.languages) {
@@ -91,11 +85,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         <span class="detail-value">${country.population.toLocaleString()}</span>
                     </div>
                     
-                    <div class="detail-item">
-                        <span class="detail-label">Currency:</span>
-                        <span class="detail-value">${currencies}</span>
-                    </div>
-                    
+                   
                     <div class="detail-item">
                         <span class="detail-label">Languages:</span>
                         <span class="detail-value">${languages}</span>

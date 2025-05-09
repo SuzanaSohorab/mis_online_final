@@ -56,11 +56,11 @@ header i {
 
 /*search section*/
 .search-section{
-    background-color: wheat;
+    background-color: white;
     padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 2px 15px;
-    margin: 60px auto;
+    margin-top: 50px;
+   
 }
 
 .search-container{
@@ -107,8 +107,8 @@ header i {
 }
 
 /* Results Section */
-#results-section {
-    margin-bottom: 40px;
+#result-section {
+    margin: 40px;
 }
 
 .country-card {
